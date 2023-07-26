@@ -1,0 +1,23 @@
+.circle {
+  border-radius: 50%;
+  height: 50px;
+  background-color: rgb(252, 252, 253);
+  width: 50px;
+}
+.father {
+  border: 2px solid;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 30px;
+  background-color: aqua;
+}
+.container {
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding-left: 40%; */
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 90px;
+  background-color: dimgray;

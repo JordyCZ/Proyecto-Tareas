@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body></body>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>lista de tareas</title>
+      <link rel="stylesheet" href="./src/styles.css" />
+    </head>
+    <body>
+      <div class="father">
+        <div class="container">
+          <h1>Lista de tareas</h1>
+          <div class="search">
+            <form>
+              <input id="imputbox" type="text" placeholder="Agregar tarea" />
+
+              <button id="boton" class="btn-add">+</button>
+            </form>
+
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="li container">
+          <ul></ul>
+        </div>
+        <div class="empty" id="cajadetareas">
+          <p>No hay tareas pendientes</p>
+        </div>
+      </div>
+      <script src="src/java.js"></script>
+    </body>
+  </html>
 </html>
