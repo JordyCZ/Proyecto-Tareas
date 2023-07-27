@@ -6,9 +6,32 @@ boton.addEventListener("click", function (e) {
   e.preventDefault();
   // cajadetareas.innerHTML = imputbox.value;
 
-  console.log(imputbox);
+  const texto = document.createElement("p");
+  texto.textContent = imputbox.value;
+  const ul = document.createElement("ul");
+  const check = document.createElement("input");
+  check.type = "checkbox";
+  const deleteBtn = document.createElement("button");
+  deleteBtn.textContent = "Delete";
+  console.log(imputbox.value);
   const li = document.createElement("li");
+  for (let i = 0; i < 3; i++) {
+    if (i === 0) {
+      li.appendChild(check);
+    }
 
-  li.textContent = imputbox.value;
-  cajadetareas.appendChild(li);
+    if (i === 1) {
+      li.appendChild(texto);
+    }
+
+    if (i === 2) {
+      li.appendChild(deleteBtn);
+      deleteBtn.addEventListener("click", function (params) {
+        li.remove();
+      });
+    }
+  }
+  console.log(li);
+  ul.appendChild(li);
+  cajadetareas.appendChild(ul);
 });
